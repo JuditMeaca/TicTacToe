@@ -1,4 +1,4 @@
-const statusDisplay = document.querySelector('.game--status');
+const statusDisplay = document.querySelector('.gamestatus');
 
 let gameActive = true;
 let currentPlayer = "X";
