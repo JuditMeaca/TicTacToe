@@ -4,9 +4,9 @@ let gameActive = true;
 let currentPlayer = "X";
 let gameState = ["", "", "", "", "", "", "", "", ""];
 
-const winningMessage = () => `Player ${currentPlayer} has won!`;
-const drawMessage = () => `Game ended in a draw!`;
-const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
+const winningMessage = () => `El jugador ${currentPlayer} ha ganado!`;
+const drawMessage = () => `El juego ha terminado en empate!`;
+const currentPlayerTurn = () => `Es el turno de ${currentPlayer}`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
 
