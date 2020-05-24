@@ -10,6 +10,16 @@ const currentPlayerTurn = () => `Es el turno de ${currentPlayer}`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
 
+let winsX = 0;
+let winsO = 0;
+
+let scoreX = document.getElementById('p1');
+let scoreO = document.getElementById('p2');
+
+
+
+
+
 const winningConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -50,6 +60,15 @@ function handleResultValidation() {
     if (roundWon) {
         statusDisplay.innerHTML = winningMessage();
         gameActive = false;
+        if(currentPlayer == "X"){
+            winsX++;
+            scoreX.innerHTML = `X: ${winsX}`;
+        }
+        if(currentPlayer == "O"){
+            winsO++;
+            scoreO.innerHTML = `O: ${winsO}`;
+        }
+
         return;
     }
 
