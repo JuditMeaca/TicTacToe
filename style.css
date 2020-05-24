@@ -15,6 +15,22 @@ header h1{
     display: flex;
     text-align: center;
 }
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.marker{
+    background-color: rgb(16, 145, 134);
+    color: white;
+    margin-right: 60px;
+    padding: 10px;
+}
+.score{
+    padding: 10px;
+    font-size: large;
+    border: solid 2px white;
+}
 section{
     padding: 10px;
     display: flex;
